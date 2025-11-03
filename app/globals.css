@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --brand:#0b0b0b;      /* near-black */
+  --brand-2:#121212;
+  --accent:#facc15;     /* yellow-400 */
+  --muted:#6b7280;      /* gray-500 */
+}
+body{ font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; color:#111827; }
+h1,h2,h3{ letter-spacing:-0.01em }
+.container{ @apply max-w-7xl mx-auto px-4; }
+
+.btn{ @apply inline-flex items-center justify-center px-5 py-3 rounded-lg font-semibold; }
+.btn-primary{ background:var(--accent); color:#111; }
+.btn-outline{ @apply border rounded-lg; }
+.badge{ @apply inline-block px-3 py-1 rounded-full text-xs font-semibold; background: #111; color:#fff; }
+.section{ @apply py-16; }
+.bg-brand{ background:var(--brand); }
+.text-accent{ color:var(--accent); }
