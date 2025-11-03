@@ -23,28 +23,33 @@ export default function Hero() {
   }
 
   return (
-    <section className="relative w-full min-h-[620px] bg-black">
+    <section className="relative w-full bg-black pt-24 pb-24 md:pt-32 md:pb-32 overflow-hidden">
+
+      {/* ✅ Background Image */}
       <Image
         src="https://www.fastwheelslimo.com/wp-content/uploads/2024/07/banner3.png"
-        alt="Hero"
+        alt="Hero Background"
         fill
-        className="object-cover opacity-60"
+        className="object-cover opacity-60 -z-10"
+        priority
       />
 
-      <div className="absolute inset-0 flex items-center justify-center px-4">
+      {/* ✅ Main Content (NO ABSOLUTE → better responsive layout) */}
+      <div className="relative z-20 flex items-center justify-center px-4">
         <div className="max-w-7xl w-full mx-auto grid md:grid-cols-2 gap-10 items-center text-white">
-          
-          {/* LEFT SIDE */}
+
+          {/* ✅ LEFT SIDE TEXT */}
           <div>
             <p className="uppercase tracking-widest text-yellow-400 font-semibold">
               Affordable & Reliable Chauffeur Service
             </p>
-            <h1 className="text-5xl md:text-6xl font-extrabold leading-tight mt-3">
-              For All Your <br className="hidden md:block" /> Transportation{' '}
-              <br className="hidden md:block" /> Needs
+            <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mt-3">
+              For All Your <br className="hidden md:block" />
+              Transportation <br className="hidden md:block" /> Needs
             </h1>
+
             <p className="mt-5 text-lg max-w-2xl text-gray-100">
-              Local, family-owned. Fixed-price rates. No hidden fees.
+              Local, family-owned. Fixed-price rates. Available 24/7 across Boston & New England.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4 items-center">
@@ -54,12 +59,14 @@ export default function Hero() {
               >
                 BOOK NOW
               </Link>
+
               <a
                 href="tel:+17744342262"
                 className="border border-white/70 px-6 py-3 rounded-lg hover:bg-white hover:text-black transition"
               >
                 Call (+1) 774-434-2262
               </a>
+
               <a
                 href="https://wa.me/17744342262"
                 className="underline hover:text-yellow-400"
@@ -69,8 +76,8 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* RIGHT SIDE FORM */}
-          <div className="bg-white text-black rounded-2xl shadow-2xl p-6 md:p-8 backdrop-blur-sm bg-opacity-95">
+          {/* ✅ RIGHT SIDE — QUOTE FORM */}
+          <div className="bg-white text-black rounded-2xl shadow-2xl p-6 md:p-8 bg-opacity-95 backdrop-blur-sm">
             <h2 className="text-2xl font-bold mb-4 text-center text-yellow-600">
               Get an Instant Quote
             </h2>
@@ -117,7 +124,7 @@ export default function Hero() {
                 required
               />
 
-              {/* ✅ PICKUP DATE */}
+              {/* ✅ DATE FIELD */}
               <input
                 type="date"
                 name="date"
@@ -127,7 +134,7 @@ export default function Hero() {
                 required
               />
 
-              {/* ✅ PICKUP TIME */}
+              {/* ✅ TIME FIELD */}
               <input
                 type="time"
                 name="time"
