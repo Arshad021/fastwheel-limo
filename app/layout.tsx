@@ -1,4 +1,5 @@
 import './globals.css'
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import StickyMobileBar from '../components/StickyMobileBar'
