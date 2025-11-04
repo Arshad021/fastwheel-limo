@@ -18,21 +18,22 @@ export default function AirportLimousinePage() {
     });
   }, []);
 
+  // Removed Google Maps links
   const airports = [
-    { name: "Boston Logan International Airport", map: "https://goo.gl/maps/eyv89AwKx6y" },
-    { name: "New Bedford Regional Airport, MA", map: "https://goo.gl/maps/Z5FzHK6Tbn92" },
-    { name: "Worcester Regional Airport, MA", map: "https://goo.gl/maps/ApJ6kb3kShx" },
-    { name: "Atlantic Aviation BED, MA", map: "https://goo.gl/maps/6RPfvW3Z4Dq" },
-    { name: "Manchester-Boston Regional Airport, NH", map: "https://goo.gl/maps/dgwrY4TnV1s" },
-    { name: "Portsmouth International Airport, NH", map: "https://goo.gl/maps/3q9NujCVQX82" },
-    { name: "Burlington International Airport, VT", map: "https://goo.gl/maps/ETnVBDG5ghr" },
-    { name: "Portland International Jetport, Maine", map: "https://goo.gl/maps/T9wmbZtFQkP2" },
-    { name: "Bangor International Airport, Maine", map: "https://goo.gl/maps/CAnvQkTnEzn" },
-    { name: "Rhode Island T.F. Green International Airport", map: "https://goo.gl/maps/3U2jXvDgc3G2" },
-    { name: "Bradley International Airport, CT", map: "https://goo.gl/maps/yf2N5kQFJTw" },
-    { name: "John F. Kennedy International Airport, NY", map: "https://goo.gl/maps/ZqF7uK5yDwn" },
-    { name: "LaGuardia Airport, NY", map: "https://goo.gl/maps/VD8RkFZ2zKx" },
-    { name: "Newark Liberty International Airport", map: "https://goo.gl/maps/5t6Gm8oJrcA2" },
+    { name: "Boston Logan International Airport" },
+    { name: "New Bedford Regional Airport, MA" },
+    { name: "Worcester Regional Airport, MA" },
+    { name: "Atlantic Aviation BED, MA" },
+    { name: "Manchester-Boston Regional Airport, NH" },
+    { name: "Portsmouth International Airport, NH" },
+    { name: "Burlington International Airport, VT" },
+    { name: "Portland International Jetport, Maine" },
+    { name: "Bangor International Airport, Maine" },
+    { name: "Rhode Island T.F. Green International Airport" },
+    { name: "Bradley International Airport, CT" },
+    { name: "John F. Kennedy International Airport, NY" },
+    { name: "LaGuardia Airport, NY" },
+    { name: "Newark Liberty International Airport" },
   ];
 
   return (
@@ -106,15 +107,12 @@ export default function AirportLimousinePage() {
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto text-gray-800">
           {airports.map((airport, i) => (
-            <a
+            <div
               key={i}
-              href={airport.map}
-              target="_blank"
-              rel="noopener noreferrer"
               className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-5 flex items-center justify-center text-center border border-gray-100 hover:-translate-y-1 hover:bg-yellow-50"
             >
               <p className="font-medium text-gray-900">{airport.name}</p>
-            </a>
+            </div>
           ))}
         </div>
 
