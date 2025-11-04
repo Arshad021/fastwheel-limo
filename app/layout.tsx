@@ -26,12 +26,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Footer />
         {/* ✅ Move this down */}
         {/* @ts-ignore */}
-<call-us-selector
+{/* <call-us-selector
   phonesystem-url="https://fastwheels.ma.3cx.us"
   party="LiveChat561783"
 >
   
-</call-us-selector>
+</call-us-selector> */}
 
 
 <Script
