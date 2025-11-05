@@ -5,6 +5,7 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import StickyMobileBar from '../components/StickyMobileBar'
 import Script from 'next/script'
+import CallUsSelector from '@/components/CallUsSelector'
 
 export const metadata = {
   title: 'FastWheel Limo',
@@ -33,11 +34,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <StickyMobileBar />
         <Footer />
 
-        <call-us-selector
-          phonesystem-url="https://fastwheels.ma.3cx.us"
-          party="LiveChat457078"
-        ></call-us-selector>
-
+        <CallUsSelector />
         {/* ✅ 3CX Widget Script */}
         <Script
           src="https://downloads-global.3cx.com/downloads/livechatandtalk/v1/callus.js"
