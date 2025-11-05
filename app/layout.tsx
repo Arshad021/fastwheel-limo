@@ -9,29 +9,38 @@ import Script from 'next/script'
 export const metadata = {
   title: 'FastWheel Limo',
   description: 'Premium limo & chauffeur service',
+  manifest: '/manifest.json',
+  themeColor: '#FFD700',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const gaId = process.env.NEXT_PUBLIC_GA_ID
-
   return (
     <html lang="en">
-      <body className="min-h-screen flex flex-col pt-16">
+      <head>
+        {/* ✅ PWA Support */}
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="theme-color" content="#FFD700" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="apple-mobile-web-app-title" content="FastWheel Limo" />
+        <link rel="apple-touch-icon" href="/icon-512x512.png" />
+      </head>
 
+      <body className="min-h-screen flex flex-col pt-16">
         {/* Main Layout Components */}
         <Navbar />
         <main className="flex-1">{children}</main>
         <StickyMobileBar />
         <Footer />
 
-        {/* 3CX Widget Script */}
+        {/* ✅ 3CX Widget Script */}
         <Script
           src="https://downloads-global.3cx.com/downloads/livechatandtalk/v1/callus.js"
           id="tcx-callus-js"
           strategy="afterInteractive"
         />
 
-        {/* Manual 3CX Initialization */}
+        {/* ✅ Manual 3CX Initialization */}
         <Script id="init-3cx" strategy="afterInteractive">
           {`
             window.addEventListener('load', function() {
@@ -45,9 +54,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           `}
         </Script>
 
-        {/* ✅ Add Speed Insights at the very end */}
+        {/* ✅ Analytics and Speed Insights */}
+        <Analytics />
         <SpeedInsights />
-
       </body>
     </html>
   )

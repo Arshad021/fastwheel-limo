@@ -1,8 +1,12 @@
 {
+    "id": "/",
     "name": "FastWheel Limo",
     "short_name": "FastWheel",
+    "description": "Premium limo & chauffeur services — book luxury rides with FastWheel Limo.",
     "start_url": "/",
+    "scope": "/",
     "display": "standalone",
+    "orientation": "portrait",
     "background_color": "#000000",
     "theme_color": "#FFD700",
     "icons": [
