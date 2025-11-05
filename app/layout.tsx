@@ -31,34 +31,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <StickyMobileBar />
         <Footer />
 
-        {/* ✅ 3CX Web Component */}
-        <call-us-selector
-          phonesystem-url="https://fastwheels.ma.3cx.us"
-          party="LiveChat457078"
-        ></call-us-selector>
-
-        {/* ✅ Load 3CX external script */}
-        <Script
-          id="3cx-script"
-          src="https://downloads-global.3cx.com/downloads/livechatandtalk/v1/callus.js"
-          strategy="afterInteractive"
-        />
-
-        {/* ✅ Initialize 3CX AFTER script loads */}
-        <Script id="3cx-init" strategy="afterInteractive">
-          {`
-            const init3cx = () => {
-              if (window.CallUs && document.querySelector('call-us-selector')) {
-                console.log("✅ Initializing 3CX widget...");
-                window.CallUs.init();
-              } else {
-                console.warn("⏳ 3CX not ready, retrying...");
-                setTimeout(init3cx, 300);
-              }
-            };
-            init3cx();
-          `}
-        </Script>
+       
 
         <Analytics />
         <SpeedInsights />
