@@ -31,7 +31,21 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <StickyMobileBar />
         <Footer />
 
-       
+       {/* ✅ Tawk.to Chat Widget */}
+<Script id="tawk-to" strategy="afterInteractive">
+  {`
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function() {
+      var s1 = document.createElement("script");
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/60cb56b165b7290ac63679ff/1f8d4l9q8';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      document.head.appendChild(s1);
+    })();
+  `}
+</Script>
+
 
         <Analytics />
         <SpeedInsights />
