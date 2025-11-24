@@ -32,8 +32,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Footer />
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
+=======
+>>>>>>> parent of 314074d (twak to added)
        
 
 >>>>>>> parent of 314074d (twak to added)
