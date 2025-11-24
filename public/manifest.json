@@ -1,24 +1,25 @@
 {
-  "id": "/",
-  "name": "Shama Passenger Transport & Tours",
-  "short_name": "Shama Transport",
-  "description": "UAE passenger transport services including airport transfers, corporate travel, bus rentals, and tour services.",
-  "start_url": "/",
-  "scope": "/",
-  "display": "standalone",
-  "orientation": "portrait",
-  "background_color": "#000000",
-  "theme_color": "#FEDF23",
-  "icons": [
-    {
-      "src": "/newwwwww-2048x858-1.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "/newwwwww-2048x858-1.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    }
-  ]
-}
+    "id": "/",
+    "name": "FastWheel Limo",
+    "short_name": "FastWheel",
+    "description": "Premium limo & chauffeur services — book luxury rides with FastWheel Limo.",
+    "start_url": "/",
+    "scope": "/",
+    "display": "standalone",
+    "orientation": "portrait",
+    "background_color": "#000000",
+    "theme_color": "#FFD700",
+    "icons": [
+      {
+        "src": "/fastwheellimo-logo.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "/icon-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
+  

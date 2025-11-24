@@ -22,4 +22,3 @@ npm run start
 ## Notes
 - Images live in `/public`. Placeholder tiny images are included (`hero.jpg`, `car1.jpg`, `car2.jpg`, `car3.jpg`, `banner-fleet.jpg`). Replace them with your real assets anytime.
 - Edit services and fleet items in the respective app pages / components.
-# Shama-Trannsportation-and-Tour

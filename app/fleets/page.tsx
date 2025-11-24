@@ -1,47 +1,112 @@
 import Link from "next/link";
 
 const fleet = [
+  // Sedans & Executive Cars
   {
-    title: "7-Seater Van (Kia Sedona)",
-    desc: "Perfect for small groups or family travel in comfort and style.",
-    pax: 7,
+    title: "Lincoln MKT",
+    desc: "Executive sedan offering refined comfort for business or airport travel.",
+    image:
+      "https://www.fastwheelslimo.com/wp-content/uploads/2021/06/8f5677_1cab5fd44e954c7f96f4a16e5c3776a9mv2.jpg",
+    pax: 3,
+    luggage: 3,
+  },
+  {
+    title: "Lincoln Aviator",
+    desc: "A luxury mid-size SUV with advanced tech and smooth performance.",
+    image: "https://www.fastwheelslimo.com/wp-content/uploads/2021/06/lincoln-aviator.jpg",
+    pax: 4,
     luggage: 4,
-    image: "/img/fleets/7-seater-sedona.jpg",
   },
   {
-    title: "12-Seater Minibus (Toyota Hiace)",
-    desc: "Comfortable minibus ideal for corporate or medium-sized groups.",
-    pax: 12,
-    luggage: 8,
-    image: "/img/fleets/12-seater-hiace.jpg",
+    title: "Mercedes S480",
+    desc: "Top-tier luxury sedan combining comfort, style, and innovation.",
+    image: "https://www.fastwheelslimo.com/wp-content/uploads/2021/10/Mercedes-S-Class.jpg",
+    pax: 3,
+    luggage: 3,
   },
   {
-    title: "15-Seater Minibus (Toyota Hiace)",
-    desc: "Spacious minibus for larger group transfers and events.",
-    pax: 15,
+    title: "Chrysler 300 Executive",
+    desc: "Premium sedan with a luxurious cabin and smooth ride.",
+    image:
+      "https://www.fastwheelslimo.com/wp-content/uploads/2021/06/8f5677_3e98dfd855674fc8a76a0770c5c502bfmv2.png",
+    pax: 3,
+    luggage: 3,
+  },
+
+  // SUVs
+  {
+    title: "Chevrolet Suburban",
+    desc: "Spacious luxury SUV ideal for family or group transfers.",
+    image: "https://www.fastwheelslimo.com/wp-content/uploads/2021/06/Chev-Suburban.jpg",
+    pax: 6,
+    luggage: 4,
+  },
+  {
+    title: "GMC Yukon Denali",
+    desc: "High-end SUV with powerful performance and comfort.",
+    image: "https://www.fastwheelslimo.com/wp-content/uploads/2021/06/GMC-Yuk.png",
+    pax: 6,
+    luggage: 5,
+  },
+  {
+    title: "Cadillac Escalade ESV",
+    desc: "Iconic luxury SUV offering ultimate space and prestige.",
+    image: "https://www.fastwheelslimo.com/wp-content/uploads/2021/06/escalade-esv.jpg",
+    pax: 7,
+    luggage: 6,
+  },
+
+  // Vans & Limos
+  {
+    title: "Mercedes Sprinter",
+    desc: "Comfortable van for teams, corporate groups, or events.",
+    image: "https://www.fastwheelslimo.com/wp-content/uploads/2021/10/Sprinter_Bus.jpg",
+    pax: 10,
     luggage: 10,
-    image: "/img/fleets/15-seater-hiace.jpg",
   },
   {
-    title: "22-Seater Minibus (Toyota Coaster)",
-    desc: "Reliable and stylish transport for mid-sized teams or tours.",
+    title: "Lincoln MKT Limousine",
+    desc: "Elegant stretch limo perfect for weddings or corporate events.",
+    image: "https://www.fastwheelslimo.com/wp-content/uploads/2021/06/Lincoln-MKTw.jpg",
+    pax: 10,
+    luggage: 6,
+  },
+  {
+    title: "Dodge Durango Limousine",
+    desc: "Stylish stretch limousine with luxury seating and LED interior.",
+    image: "https://www.fastwheelslimo.com/wp-content/uploads/2021/06/dodge-durango-limo.jpg",
+    pax: 14,
+    luggage: 8,
+  },
+  {
+    title: "Chrysler 300 Stretch Limo",
+    desc: "Sleek and modern stretch limousine for up to 14 passengers.",
+    image: "https://www.fastwheelslimo.com/wp-content/uploads/2021/06/Chrysler-300.jpg",
+    pax: 14,
+    luggage: 6,
+  },
+
+  // Buses
+  {
+    title: "Mini Bus",
+    desc: "Ideal for medium groups, airport transfers, and corporate events.",
+    image: "https://www.fastwheelslimo.com/wp-content/uploads/2021/06/mini-bus.jpg",
+    pax: 25,
+    luggage: 20,
+  },
+  {
+    title: "Luxury Coach Bus",
+    desc: "Spacious and elegant 45-passenger bus for large groups or tours.",
+    image: "https://www.fastwheelslimo.com/wp-content/uploads/2021/06/luxury-bus.jpg",
+    pax: 45,
+    luggage: 40,
+  },
+  {
+    title: "Party Bus",
+    desc: "Vibrant 22-passenger bus with lighting, sound system, and luxury interior.",
+    image: "https://www.fastwheelslimo.com/wp-content/uploads/2021/06/party-bus.jpg",
     pax: 22,
-    luggage: 15,
-    image: "/img/fleets/22-seater-coaster.jpg",
-  },
-  {
-    title: "35-Seater Luxury Bus",
-    desc: "Elegant and spacious bus suitable for events or large group transfers.",
-    pax: 35,
-    luggage: 25,
-    image: "/img/fleets/35-seater-bus.jpg",
-  },
-  {
-    title: "50-Seater Luxury Bus",
-    desc: "Premium coach for full-sized corporate groups or large events.",
-    pax: 50,
-    luggage: 35,
-    image: "/img/fleets/50-seater-bus.jpg",
+    luggage: 10,
   },
 ];
 
@@ -52,7 +117,8 @@ export default function Fleets() {
       <div className="text-center mb-10">
         <h1 className="text-4xl font-extrabold mb-4 text-gray-900">Our Fleet</h1>
         <p className="text-gray-600 max-w-2xl mx-auto">
-          Choose from SHAMA's premium fleet of vans, minibuses, and luxury buses for corporate, group, and event transportation.
+          Discover our collection of luxury sedans, SUVs, limousines, and buses — each maintained to
+          deliver a premium experience for your travels, events, and business rides.
         </p>
       </div>
 

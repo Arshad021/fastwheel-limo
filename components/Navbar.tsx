@@ -9,27 +9,18 @@ export default function Navbar() {
   const timerRef = useRef(null)
 
   const services = [
-    'airport-hotel-transfers',
-    'companies-corporate-transportation',
-    'exhibitions-wedding-events-transportation',
-    'hourly-daily-weekly-monthly-bus-rental',
-    'point-to-point-two-way-transfer',
-  ]
-
-  const tours = [
-    'abu-dhabi-city-tour',
-    'dubai-city-tour',
-    'desert-safari',
-    'other-emirates-tour',
-  ]
-
-  const fleets = [
-    '7-seater-van-kia-sedona',
-    '12-seater-minibus-toyota-hiace',
-    '15-seater-minibus-toyota-hiace',
-    '22-seater-minibus-toyota-coaster',
-    '35-seater-luxury-bus',
-    '50-seater-luxury-bus',
+    'airport-limousine',
+    'point-to-point',
+    'corporate-travel',
+    'hourly-chauffeur',
+    'city-to-city',
+    'roadshows',
+    'events',
+    'wedding-limousine',
+    'prom-limousine',
+    'night-out-ride-limousine',
+    'casino-limousine',
+    'bachelor-parties-limousine',
   ]
 
   const handleEnter = () => {
@@ -44,112 +35,77 @@ export default function Navbar() {
   return (
     <header className="fixed w-full z-40 top-0">
 
-      {/* Top Bar */}
-      <div className="bg-gradient-to-r from-[#ea3c3a] to-[#fedf23] text-black text-sm py-2">
-        <div className="max-w-7xl mx-auto px-4 flex justify-between items-center flex-wrap text-white">
+      {/* ✅ TOP BAR */}
+      <div className="bg-yellow-500 text-black text-sm py-2">
+        <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
+
+          {/* Left */}
           <div className="flex items-center gap-4">
-            <Link href="/book" className="font-semibold underline text-black hover:text-gray-800">
+            <Link href="/book" className="font-semibold underline">
               Book Now
             </Link>
-            <span className="text-black font-medium">24/7 Service</span>
+            <span>24/7 Service</span>
           </div>
 
-          <div className="flex items-center gap-6">
-            <a href="tel:+971558840121" className="font-semibold underline text-black hover:text-gray-800">
-              Call: +971 55 884 0121
-            </a>
-            <a href="mailto:Shamapassenger@gmail.com" className="font-semibold underline text-black hover:text-gray-800">
-              Shamapassenger@gmail.com
-            </a>
-          </div>
+          {/* Right */}
+          <a href="tel:+17744342262" className="font-semibold underline">
+            Call: 774-434-2262
+          </a>
         </div>
       </div>
 
-      {/* Main Navbar */}
-      <div className="bg-black text-white shadow-md">
+      {/* ✅ MAIN NAVBAR */}
+      <div className="bg-black text-white">
         <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
 
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3">
             <Image
-              src="/newwwwww-2048x858-1.png"
-              alt="Shama Transport and Tours"
-              width={180}
-              height={50}
+              src="https://www.fastwheelslimo.com/wp-content/uploads/2021/06/fastwheellimo-logo.png"
+              alt="FastWheel Limo"
+              width={160}
+              height={40}
               priority
             />
           </Link>
 
           {/* Desktop Menu */}
-          <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
+          <nav className="hidden md:flex items-center gap-6">
             <Link href="/">Home</Link>
-            <Link href="/about">About Us</Link>
+            <Link href="/book">Book Now</Link>
+            <Link href="/fleets">Fleet</Link>
 
-            {/* Fleets Dropdown */}
+            {/* Services Dropdown */}
             <div
               className="relative"
               onMouseEnter={handleEnter}
               onMouseLeave={handleLeave}
             >
-              <Link href="/fleets" className="flex items-center">
-                Fleets ▾
-              </Link>
+              <button className="flex items-center">Services ▾</button>
               {sopen && (
-                <div className="absolute right-0 mt-2 bg-white text-black rounded shadow-lg w-72 p-2 grid grid-cols-1 z-50">
-                  {fleets.map((slug) => (
+                <div className="absolute right-0 mt-2 bg-white text-black rounded shadow w-72 p-2 grid grid-cols-1 z-50">
+                  {services.map((slug) => (
                     <Link
                       key={slug}
-                      href={`/fleets/${slug}`}
+                      href={`/services/${slug}`}
                       className="px-4 py-2 hover:bg-gray-100 capitalize"
                     >
                       {slug.replace(/-/g, ' ')}
                     </Link>
                   ))}
+                  <Link
+                    href="/services"
+                    className="px-4 py-2 hover:bg-gray-100 font-semibold"
+                  >
+                    All Services →
+                  </Link>
                 </div>
               )}
             </div>
 
-            {/* Services Dropdown */}
-            <div className="relative group">
-              <Link href="/services" className="flex items-center">
-                Services ▾
-              </Link>
-              <div className="absolute right-0 hidden group-hover:grid bg-white text-black rounded shadow-lg w-80 p-2 grid-cols-1 z-50">
-                {services.map((slug) => (
-                  <Link
-                    key={slug}
-                    href={`/services/${slug}`}
-                    className="px-4 py-2 hover:bg-gray-100 capitalize"
-                  >
-                    {slug.replace(/-/g, ' ')}
-                  </Link>
-                ))}
-              </div>
-            </div>
-
-            {/* Tours Dropdown */}
-            <div className="relative group">
-              <button className="flex items-center">Tours ▾</button>
-              <div className="absolute right-0 hidden group-hover:grid bg-white text-black rounded shadow-lg w-72 p-2 grid-cols-1 z-50">
-                {tours.map((slug) => (
-                  <Link
-                    key={slug}
-                    href={`/tours/${slug}`}
-                    className="px-4 py-2 hover:bg-gray-100 capitalize"
-                  >
-                    {slug.replace(/-/g, ' ')}
-                  </Link>
-                ))}
-              </div>
-            </div>
-
+            <Link href="/locations">Locations</Link>
+            <Link href="/about">About</Link>
             <Link href="/contact">Contact</Link>
-            <Link
-              href="/book"
-              className="bg-[#fedf23] text-black px-3 py-1 rounded hover:bg-[#ffe94a]"
-            >
-              Book Now
-            </Link>
           </nav>
 
           {/* Hamburger */}
@@ -168,45 +124,31 @@ export default function Navbar() {
           }`}
         >
           <Link href="/" className="block py-2">Home</Link>
-          <Link href="/about" className="block py-2">About Us</Link>
-
-          <details className="pt-2">
-            <summary>Fleets</summary>
-            <div className="pl-4">
-              <Link href="/fleets" className="block py-1 font-semibold">All Fleets</Link>
-              {fleets.map((slug) => (
-                <Link key={slug} href={`/fleets/${slug}`} className="block py-1 capitalize">
-                  {slug.replace(/-/g, ' ')}
-                </Link>
-              ))}
-            </div>
-          </details>
+          <Link href="/book" className="block py-2">Book Now</Link>
+          <Link href="/fleets" className="block py-2">Fleet</Link>
 
           <details className="pt-2">
             <summary>Services</summary>
             <div className="pl-4">
-              <Link href="/services" className="block py-1 font-semibold">All Services</Link>
               {services.map((slug) => (
-                <Link key={slug} href={`/services/${slug}`} className="block py-1 capitalize">
+                <Link
+                  key={slug}
+                  href={`/services/${slug}`}
+                  className="block py-1 capitalize"
+                >
                   {slug.replace(/-/g, ' ')}
                 </Link>
               ))}
+              <Link href="/services" className="block py-1 font-semibold">
+                All Services →
+              </Link>
             </div>
           </details>
 
-          <details className="pt-2">
-            <summary>Tours</summary>
-            <div className="pl-4">
-              {tours.map((slug) => (
-                <Link key={slug} href={`/tours/${slug}`} className="block py-1 capitalize">
-                  {slug.replace(/-/g, ' ')}
-                </Link>
-              ))}
-            </div>
-          </details>
-
+          <Link href="/locations" className="block py-2">Locations</Link>
+          <Link href="/about" className="block py-2">About</Link>
           <Link href="/contact" className="block py-2">Contact</Link>
-          <Link href="/book" className="block py-2 font-semibold text-[#fedf23]">Book Now</Link>
+          <Link href="/reserve" className="block py-2">Login</Link>
         </div>
       </div>
     </header>

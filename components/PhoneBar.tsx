@@ -11,17 +11,17 @@ export default function PhoneBar() {
         {/* Contact Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 text-base font-medium">
 
-          <a href="tel:+971558840121" className="underline block">
-            +971 55 884 0121
+          <a href="tel:+17744342262" className="underline block">
+            774-434-2262
           </a>
 
-          <a href="mailto:Shamapassenger@gmail.com"
+          <a href="mailto:Support@fastwheelslimo.com"
              className="underline block break-all sm:break-normal">
-            Shamapassenger@gmail.com
+            Support@fastwheelslimo.com
           </a>
 
           <a
-            href="https://wa.me/971558840121"
+            href="https://wa.me/17744342262"
             className="underline block">
             WhatsApp Us
           </a>
