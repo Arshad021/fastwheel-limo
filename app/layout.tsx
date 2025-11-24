@@ -31,7 +31,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <StickyMobileBar />
         <Footer />
 
+<<<<<<< HEAD
     
+=======
+       
+
+>>>>>>> parent of 314074d (twak to added)
         <Analytics />
         <SpeedInsights />
       </body>
