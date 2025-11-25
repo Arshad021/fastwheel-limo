@@ -90,7 +90,7 @@ const fleet = [
   {
     title: "Mini Bus",
     desc: "Ideal for medium groups, airport transfers, and corporate events.",
-    image: "https://www.fastwheelslimo.com/wp-content/uploads/2021/06/mini-bus.jpg",
+    image: "https://www.fastwheelslimo.com/wp-content/uploads/2025/11/WhatsApp-Image-2025-11-24-at-1.08.37-PM-1.jpeg",
     pax: 25,
     luggage: 20,
   },
