@@ -13,14 +13,14 @@ const fleet = [
   {
     title: "Lincoln Aviator",
     desc: "A luxury mid-size SUV with advanced tech and smooth performance.",
-    image: "https://www.fastwheelslimo.com/wp-content/uploads/2021/06/lincoln-aviator.jpg",
+    image: "https://www.fastwheelslimo.com/wp-content/uploads/2025/11/WhatsApp-Image-2025-11-24-at-1.08.40-PM.jpeg",
     pax: 4,
     luggage: 4,
   },
   {
     title: "Mercedes S480",
     desc: "Top-tier luxury sedan combining comfort, style, and innovation.",
-    image: "https://www.fastwheelslimo.com/wp-content/uploads/2021/10/Mercedes-S-Class.jpg",
+    image: "https://www.fastwheelslimo.com/wp-content/uploads/2025/11/WhatsApp-Image-2025-11-24-at-1.08.38-PM-1.jpeg",
     pax: 3,
     luggage: 3,
   },
@@ -51,7 +51,7 @@ const fleet = [
   {
     title: "Cadillac Escalade ESV",
     desc: "Iconic luxury SUV offering ultimate space and prestige.",
-    image: "https://www.fastwheelslimo.com/wp-content/uploads/2021/06/escalade-esv.jpg",
+    image: "https://www.fastwheelslimo.com/wp-content/uploads/2025/11/WhatsApp-Image-2025-11-24-at-1.08.38-PM-2-1.jpeg",
     pax: 7,
     luggage: 6,
   },
@@ -97,14 +97,14 @@ const fleet = [
   {
     title: "Luxury Coach Bus",
     desc: "Spacious and elegant 45-passenger bus for large groups or tours.",
-    image: "https://www.fastwheelslimo.com/wp-content/uploads/2021/06/luxury-bus.jpg",
+    image: "https://www.fastwheelslimo.com/wp-content/uploads/2025/11/WhatsApp-Image-2025-11-24-at-1.08.37-PM.jpeg",
     pax: 45,
     luggage: 40,
   },
   {
     title: "Party Bus",
     desc: "Vibrant 22-passenger bus with lighting, sound system, and luxury interior.",
-    image: "https://www.fastwheelslimo.com/wp-content/uploads/2021/06/party-bus.jpg",
+    image: "https://www.fastwheelslimo.com/wp-content/uploads/2025/11/WhatsApp-Image-2025-11-24-at-1.08.37-PM-1.jpeg",
     pax: 22,
     luggage: 10,
   },
