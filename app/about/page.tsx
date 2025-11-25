@@ -7,16 +7,16 @@ export default function About() {
       <div className="relative bg-black text-white rounded-2xl shadow-lg mb-16 h-[300px] flex items-center justify-center text-center overflow-hidden">
         <img
           src="https://www.fastwheelslimo.com/wp-content/uploads/2024/07/Luxury-Airport-Transfer-Service-in-Miami-1.jpg"
-          alt="About FastWheel Limo"
+          alt="About Boston Times Limousine"
           className="absolute inset-0 w-full h-full object-cover rounded-2xl"
         />
         <div className="absolute inset-0 bg-black/60 rounded-2xl"></div>
         <div className="relative z-10">
           <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
-            About FastWheel Limo
+            About Boston Times Limousine
           </h1>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-            Discover who we are and why FastWheel Limo is the trusted choice for
+            Discover who we are and why Boston Times Limousine is the trusted choice for
             premium limousine services.
           </p>
         </div>
@@ -37,7 +37,7 @@ export default function About() {
         <div className="space-y-6">
           <h2 className="text-2xl font-bold text-gray-900">Our Story</h2>
           <p className="text-gray-700">
-          Fast Wheels Limousine and Car Services has been offering clients 
+          Boston Times Limousine and Car Services has been offering clients 
           throughout Boston and the surrounding area quality 
           transportation services since 2018. Great service begins
            with great people and real experience which is why we put
@@ -49,7 +49,7 @@ export default function About() {
           of what a Limousine Service can be.
           </p>
           <p className="text-gray-700">
-          At Fast Wheels Limousine and Car Services, we get you from point
+          At Boston Times Limousine and Car Services, we get you from point
           
          A to B with comfort and with ease. We are proud to be the leading 
          Limousine Service any where you need to go. We believe we’ve become 
