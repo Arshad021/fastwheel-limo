@@ -7,7 +7,7 @@ import StickyMobileBar from '../components/StickyMobileBar'
 import Script from 'next/script'
 
 export const metadata = {
-  title: 'FastWheel Limo',
+  title: 'Boston Times Limousine',
   description: 'Premium limo & chauffeur service',
   manifest: '/manifest.json',
   themeColor: '#FFD700',
@@ -21,7 +21,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="theme-color" content="#FFD700" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-        <meta name="apple-mobile-web-app-title" content="FastWheel Limo" />
+        <meta name="apple-mobile-web-app-title" content="Boston Times Limousine" />
         <link rel="apple-touch-icon" href="/icon-512x512.png" />
       </head>
 

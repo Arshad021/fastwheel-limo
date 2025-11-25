@@ -8,7 +8,7 @@ export default function Footer() {
 
         {/* Brand Info */}
         <div>
-          <h3 className="text-white text-2xl font-bold mb-3">FastWheel Limo</h3>
+          <h3 className="text-white text-2xl font-bold mb-3">Boston Times Limousine</h3>
           <p className="text-gray-400 leading-relaxed">
             Premium limousine & chauffeur service across Boston and New England.
             Reliable. Comfortable. Always on time.
@@ -85,7 +85,7 @@ export default function Footer() {
 
       {/* Bottom Bar */}
       <div className="text-center text-gray-500 text-sm mt-8">
-        © {new Date().getFullYear()} FastWheel Limo · All Rights Reserved · 
+        © {new Date().getFullYear()} Boston Times Limousine · All Rights Reserved · 
         <Link href="/terms" className="hover:text-yellow-400 ml-1">Terms</Link> · 
         <Link href="/privacy" className="hover:text-yellow-400 ml-1">Privacy</Link>
       </div>

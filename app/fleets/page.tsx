@@ -13,7 +13,7 @@ const fleet = [
   {
     title: "Lincoln Aviator",
     desc: "A luxury mid-size SUV with advanced tech and smooth performance.",
-    image: "https://www.fastwheelslimo.com/wp-content/uploads/2025/11/WhatsApp-Image-2025-11-24-at-1.08.40-PM.jpeg",
+    image: "https://d2ivfcfbdvj3sm.cloudfront.net/6Oq1_tGrCwPa7CTg/51558/stills_0640_png/MY2023/51558/51558_st0640_116.webp?c=172&p=164&m=1&o=png&s=mMTeoCKnzODERCG_q17VRB",
     pax: 4,
     luggage: 4,
   },
