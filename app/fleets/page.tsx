@@ -74,7 +74,7 @@ const fleet = [
   {
     title: "Dodge Durango Limousine",
     desc: "Stylish stretch limousine with luxury seating and LED interior.",
-    image: "https://www.fastwheelslimo.com/wp-content/uploads/2021/06/dodge-durango-limo.jpg",
+    image: "https://greenhopechauffeur.com/assets/dodge-durango-black-stretch-limo.webp",
     pax: 14,
     luggage: 8,
   },
